@@ -31,6 +31,7 @@ class CookbookCli {
 else (name)
 {
   return 'Sorry no recipes found'
+  alert ('no recipe found')
 }
   remove(name) {
     this.cookbook.removeRecipe(name);
