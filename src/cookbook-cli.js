@@ -21,11 +21,17 @@ class CookbookCli {
     this.cookbook.addRecipe(name, ingredients);
     return `Successfully added the following recipe: ${name}`;
   }
+  else (name0) {
+    return 'recipe already exists'
+  }
 
   get(name) {
     return `The ingredients for ${name} are: ${this.cookbook.getRecipe(name)}`;
   }
-
+else (name)
+{
+  return 'Sorry no recipes found'
+}
   remove(name) {
     this.cookbook.removeRecipe(name);
     return `Successfully removed the following recipe: ${name}`;
